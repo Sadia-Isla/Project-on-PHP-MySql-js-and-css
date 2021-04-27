@@ -1,0 +1,218 @@
+/*--------CSS FOR Category -------*/
+
+.category {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.category .col-md-3 {
+    padding: 0;
+}
+
+.category .category-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.category .category-item.ch-400 {
+    height: 400px;
+}
+
+.category .category-item.ch-250 {
+    height: 250px;
+}
+
+.category .category-item.ch-150 {
+    height: 150px;
+}
+
+.category .category-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.category .category-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 111, 97, .7);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.category .category-name:hover {
+    opacity: 1;     
+}
+
+.category .category-name p {
+    margin: 0 0 50px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.category .category-name:hover p {
+    margin: 0;       
+}
+
+/*------Footer CSS -------*/
+
+.footer {
+    position: relative;
+    padding: 30px ;
+    background:#FFE4E1;
+}
+
+.footer .footer-widget {
+    position: relative;
+    width: 800px ;
+    margin-bottom: 0px;
+	color:black;
+	font-weight:400;
+}
+
+.footer .footer-widget h2 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 20px; 
+	font-weight:400;
+}
+
+.footer .footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .footer-widget ul li {
+    margin-bottom: 12px; 
+}
+
+.footer .footer-widget ul li:last-child {
+    margin-bottom: 0; 
+}
+
+.footer .footer-widget ul li a {
+    color: black;
+    white-space: nowrap;
+    display: block;
+    line-height: 23px;
+    transition: all .1s;
+}
+
+.footer .footer-widget ul li a::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.footer .footer-widget ul li a:hover {
+    color: black;
+}
+
+.footer .footer-widget ul li a:hover::before {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.footer .contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer .contact-info p i {
+    margin-right: 5px;
+}
+
+.footer .social {
+    position: relative;
+    width: 100%;
+}
+
+.footer .social a {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 40px;
+    height: 40px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #353535;
+    border-radius: 4px;
+    transition: all .1s;
+}
+
+.footer .social a:hover {
+    color: black;
+    border-color: black;
+}
+
+.footer .payment {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+@media (min-width: 992px) {
+    .footer .payment {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.footer .payment-method,
+.footer .payment-security {
+    overflow: hidden;
+}
+
+.footer .payment-method {
+    text-align: left;
+}
+
+.footer .payment-security {
+    text-align: right;
+}
+
+@media (max-width: 768.98px) {
+    .footer .payment-method {
+        margin-bottom: 15px;
+    }
+    
+    .footer .payment-method,
+    .footer .payment-security {
+        text-align: center; 
+    } 
+}
+
+.footer .payment-method h2,
+.footer .payment-security h2 {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+	color:black;
+}
+
+.footer .payment-method img,
+.footer .payment-security img {
+    height: 25px;
+}
